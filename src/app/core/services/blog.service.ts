@@ -13,4 +13,9 @@ export class BlogService {
 	getBlogs(): Observable<Blog[]> {
 		return this.http.get<Blog[]>(`${environment.apiUrl}/blogs`);
 	}
+
+  // create blog
+  createBlog(): Observable<Blog> {
+    return this.http.post<Blog>(`${environment.apiUrl}/blogs`, {});
+  }
 }
