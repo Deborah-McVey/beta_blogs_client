@@ -11,4 +11,3 @@ import { Blog } from '../../models/blog';
 export class BlogListComponent {
   @Input({ required: true }) blogs: Blog[] = [];
 }
- 
